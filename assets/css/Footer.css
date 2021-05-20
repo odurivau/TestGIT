@@ -1,0 +1,109 @@
+* {
+padding:5px;
+margin: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato'; sans-serif;
+}
+
+h3 {
+    font-family: 'Merriweather';
+}
+
+footer {
+    color: white;
+    background-color: darkslategray;
+    padding: 4em 0;
+    display: grid;
+    grid-template-columns: 7vw 1fr 7vw;
+    grid-template-columns: auto auto;
+}
+
+.footer-container {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo navigation secondary social"
+                        "contact contact . newsletter";
+
+}
+
+.social-networks {
+ grid-area: social;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-template-rows: auto auto;
+ justify-items: center;
+}
+
+.social-networks h3 {
+grid-column: 1/-1;
+
+}
+
+.facebook {
+    justify-self: left;
+}
+
+.contact-block, .newsletter {
+    align-self: end;
+}
+
+.contact-block {
+    grid-area: contact;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+    width: 70%;
+    
+}
+
+.newsletter {
+    grid-area: newsletter;
+}
+
+.bottom-line {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: ;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#terms {
+    grid-column: 1;
+}
+#privacy {
+    grid-column: 2;
+}
+#legal {
+    grid-column: 3;
+}
+
+.text-input input {
+    border-radius: 5px;
+}
+
+.text-input input:first-child {
+    background-color: darkseagreen;
+}
+.text-input input:nth-child(2) {
+    background-color: darkgoldenrod;
+}
+
+footer a:hover {
+    border: 2px solid antiquewhite;
+    border-radius: 5px;
+}

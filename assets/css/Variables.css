@@ -1,0 +1,35 @@
+/* Variable pour toute la page */
+:root {
+    --my-color : #8f3a84;
+    --default-padding: 10px 10px 5px 5px;
+}
+
+
+p {
+    color: var(--my-color);
+    padding: var(--default-padding);
+}
+
+/* Variable pour toutes les balises a (lien) */
+a {
+    --default-color: rgb(78,78,221);
+}
+
+
+
+/* Variables Docaposte*/
+:root {
+	--white: white;
+	--vibrant-blue: #0432ff;
+	--text-title: #00008c;
+	--c: #0432ff;
+	--grey-blue: #666d92;
+	--pale-grey-two: #f8f8fb;
+	--pale-grey: #e5eaff;
+	--blue: #2c7aff;
+	--blue-magenta: #0a00ff;
+	--slate: #565b72;
+	--bluey-grey: #8f92a1;
+	--clear-blue: #2c7aff;
+	--background: #f8f8fb;
+}

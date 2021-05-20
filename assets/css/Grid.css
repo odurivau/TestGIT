@@ -1,0 +1,64 @@
+.container {
+height: 90vh;
+margin: 2rem;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+.cell {
+    color: rgb(127,128,216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;    
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px 0px 20px 0%;
+}
+
+.cell1 { 
+    background: chartreuse;
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+
+.cell2 {
+    background:chocolate;
+}
+
+.cell3 {
+    background:cornflowerblue;
+}
+
+.cell4 {
+    background:darkblue;
+}
+
+.cell5 {
+    background: darkgreen;
+}
+
+.cell6 {
+    background: darkmagenta;
+}
+
+.cell7 {
+    background: darkseagreen;
+}
+
+.cell8 {
+    background: deeppink;
+    grid-row: 3;
+    grid-column: 2/4;
+}
+
+div p {
+    width: 50%;
+}
+
+
+.cell9 {
+    background: grey;
+}

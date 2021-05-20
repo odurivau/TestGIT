@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation voyage</title>
+
+    <link rel="stylesheet" href="./Assets/CSS/FormVoyage.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="./page1.html" target="_blank" method="POST" autocomplete="on">
+
+        <div class="container">
+            <div class="cell cell1">
+                <br>
+                Formulaire de réservation
+                <br>
+                <br>
+            </div>
+
+            <div class="cell cell3">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Coordonnées</h3>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td align="center" width=100> <label for="fname">Prénom</label> </td>
+                                    <td><input type="text" id="fname" required></td>
+                                    <td align="center" width=100><label for="lname">Nom</label></td>
+                                    <td><input type="text" id="lname" required></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>Période</h3>
+                        </td>
+                        <td>
+                            Du <input type="date" id="datedebut" name="datedebut" required>
+                            Au <input type="date" id="datefin" name="datefin" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>Nombre de personnes</h3>
+                        </td>
+                        <td>
+                            <input type="number" min="1" max="4" value="1"><label for="quantity"> (entre 1 et 4)</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>Formule</h3>
+                        </td>
+                        <td>
+                            <select name="jour" size="2" multiple>
+                                <option value="demi">Demi-pension</option>
+                                <option value="complete" selected>Pension complete</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Nombre de lits</h3>
+                        </td>
+                        <td>
+                            <input type="radio" value="2" id="nblits" name="nblits" required>
+                            <label for="nblits">2 lits</label>
+                            <input type="radio" value="3" id="nblits" name="nblits">
+                            <label for="nblits">3 lits</label>
+                            <input type="radio" value="4" id="nblits" name="nblits">
+                            <label for="nblits">4 lits</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Options</h3>
+                        </td>
+                        <td>
+                            <input type="checkbox" value="" id="vuemer" name="vuemer">
+                            <label for="vue">Vue mer</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b><label for="reduc">Coupon réduction</label><br></b>
+                        </td>
+                        <td>
+                            <input type="text" id="reduc"><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="cell cell5">
+                <h3>Conditions générales</h3>
+                <input type="checkbox" value="" id="conditions" name="conditions" required><label for="conditions">
+                    J'accepte les conditions</label><br>
+                <br>
+                <h3>Réservation</h3>
+                <!-- <label for="resa">Réservation</label><br> -->
+                <input type="submit" value="Valider">
+                <input type="reset">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

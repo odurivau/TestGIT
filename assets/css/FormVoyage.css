@@ -1,0 +1,48 @@
+.container {
+    height: 90vh;
+    width: 90vw;
+    margin: 2rem;
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    /*
+                         grid-template-rows: 3fr 1fr;
+                         
+    grid-template-columns:  1fr 2fr 1fr;
+    */
+    font-family: "Farro";
+    grid-gap: 10px;
+}
+
+/* Cellules */
+.cell {
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* style de chaque cellule */
+.cell1 { 
+    background: chartreuse;
+    grid-area:header;
+}
+
+.cell2 {
+    background:chocolate;
+    grid-area:left;
+}
+
+.cell3 {
+    background:cornflowerblue;
+    grid-area:main;
+}
+
+.cell4 {
+    background:darkblue;
+    grid-area:right;
+}
+
+.cell5 {
+    background: yellow;
+    grid-area:footer;
+}

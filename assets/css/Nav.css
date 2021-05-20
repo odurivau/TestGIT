@@ -1,0 +1,41 @@
+#topnav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: chocolate;
+    font-family: "Farro";
+    font-size: 20px;
+    text-shadow: 3px 3px 3px orange;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 40px;
+}
+
+.nav-link {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    color: rgb(105,218,152);
+    text-align: center;
+    vertical-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+nav a:hover {
+
+background-color: cadetblue;
+font-size: 25px;
+transition: all .5s;
+
+}
+
+.active {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    
+}
